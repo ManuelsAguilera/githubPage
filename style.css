@@ -1,8 +1,28 @@
+:root
+{
+    --main-bg-color:rgb(50, 50, 50);
+    --main-text-color:rgb(255, 255, 255);
+}
+
 * {
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
+
+.banner {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    padding: 1em;
+    text-align: center;
+    border-radius: 0.5em;
+    margin: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.1em black; /*Gracias copilot!*/
+}
+
 
 body{
     background-color: rgb(50, 50, 50);
@@ -11,4 +31,5 @@ body{
 h1 { 
     font-size: x-large;
     padding-top:2em;
+    color:var(--main-text-color);
 }
