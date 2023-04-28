@@ -1,0 +1,14 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(50, 50, 50);
+}
+/*  Making a cool looking banner*/
+h1 { 
+    font-size: x-large;
+    padding-top:2em;
+}
