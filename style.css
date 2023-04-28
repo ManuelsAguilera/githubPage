@@ -1,7 +1,10 @@
 :root
 {
     --main-bg-color:rgb(50, 50, 50);
+    --content-bg-color:rgb(40, 40, 50);
     --main-text-color:rgb(255, 255, 255);
+
+    --main-radius:15px;
 }
 
 * {
@@ -21,15 +24,51 @@
     font-size: 1.5em;
     font-weight: bold;
     text-shadow: 0.1em 0.1em 0.1em black; /*Gracias copilot!*/
+    
 }
 
 
 body{
     background-color: rgb(50, 50, 50);
+    
 }
 /*  Making a cool looking banner*/
 h1 { 
     font-size: x-large;
     padding-top:2em;
     color:var(--main-text-color);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    margin: 1em;
+}
+
+.tab{
+    margin-left: 2em;
+}
+
+.tabBio
+{
+    font-size:large;
+    background-color:var(--content-bg-color);
+    color:var(--main-text-color);
+    padding:3px;
+
+    border-top-right-radius: var(--main-radius);
+    border-top-left-radius: var(--main-radius);
+    
+}
+
+.table-content
+{
+    border-style: groove;
+    background-color:var(--content-bg-color);
+    color:var(--main-text-color);
+    padding:3px;
+
+
 }
