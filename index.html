@@ -11,12 +11,22 @@
 <!-- working on this -->
 <script>
     //Make a function to change the contents of the table-contet div
-    function changeContent(idContent){
-        
-        
-        document.getElementBy(id).innerHTML = "Hello World";
+    
 
-              }
+    function changeContent(content){
+        tableContent = document.getElementsByClassName("table-content")[0];
+
+        if (content === "bio"){
+            tableContent.innerHTML = "<h2>Personal information!</h2> <p>Information about me lorem</p>";
+        }
+        if (content === "projects"){
+            tableContent.innerHTML = "<h2>Projects!</h2> <p>Information about my projects lorem</p>";
+        }  
+
+
+    }
+
+              
 </script>
 
 
@@ -26,6 +36,7 @@
         <div class="banner-text">
             <h1>Manuel Aguilera</h1>
             <h2>Reference photo</h2>
+            <h2>very real!</h2>
         </div>
         <img src="monke.png" width="100" height="100"></img>
     </div>
@@ -33,8 +44,8 @@
 
     <div class="container">
         <nav class="tab">
-            <button class="tabBio"  >Pestaña</button>
-            <button class="tabBio" onclick=changeContent()>Pestaña2</button>
+            <button class="tabBio"  onclick="changeContent('bio')">¿Quien soy?</button>
+            <button class="tabBio" onclick="changeContent('projects')" >Mis proyectos</button>
         </nav>
         <div class="table-content">
             <p>
